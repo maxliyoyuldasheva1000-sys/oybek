@@ -1,0 +1,131 @@
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: url(image.png);
+  
+  background-size: cover;
+  font-family:Arial, sans-serif;
+}
+
+
+/* ASOSIY KARTA */
+.card{
+  background: linear-gradient(to right, #141e30, #243b55);
+  width:100%;
+  max-width:480px;
+  padding:22px;
+  border-radius:20px;
+  box-shadow:0 25px 60px rgba(0,0,0,.8);
+  color:white;
+  text-align:center;
+}
+
+/* SARLAVHA */
+.card h1,.card h2{
+  margin-bottom:10px;
+}
+
+/* TUGMALAR */
+.btn{
+  display:block;
+  width:450px;
+  margin-top:10px;
+  padding:14px;
+  background: url( image\ copy\ 2.png);
+  color:#022c22;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:14px;
+  border:none;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:scale(1.03);
+  
+}
+
+/* TEST SAVOLLAR */
+.q{
+  text-align:left;
+  margin-bottom:14px;
+}
+
+.q b{
+  display:block;
+  margin-bottom:6px;
+}
+
+/* RADIO TUGMALAR */
+label{
+  display:block;
+  background:#0b1220;
+  padding:10px;
+  margin:6px 0;
+  border-radius:10px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+label:hover{
+  background:#1e293b;
+}
+
+input[type="radio"]{
+  margin-right:8px;
+}
+
+/* NATIJA */
+#ball{
+  margin-top:15px;
+  font-size:18px;
+}
+/* === KOMPYUTER QISMLARI DIZAYNI === */
+
+.qismlar{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:12px;
+  margin:15px 0;
+}
+
+.qism{
+  padding:16px;
+  border-radius:16px;
+  font-weight:bold;
+  text-align:center;
+  color:white;
+  font-size:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.5);
+  transition:0.3s;
+}
+video {
+    width: 320px;
+    height: auto; 
+    max-width: 100%; 
+  }
+/* RANGLAR */
+.monitor{
+  background:linear-gradient(135deg,#3b82f6,#1e40af);
+}
+
+.klav{
+  background:linear-gradient(135deg,#22c55e,#15803d);
+}
+
+.mouse{
+  background:linear-gradient(135deg,#f59e0b,#b45309);
+}
+
+.sistem{
+  background:linear-gradient(135deg,#a855f7,#6b21a8);
+}
+
+/* HOVER EFFEKT */
+.qism:hover{
+  transform:scale(1.06);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Testlar</title>
+<link rel="stylesheet" href="/bosh/style.css">
+</head>
+
+<body>
+<div class="card">
+  <h2>📝 Testlar bo‘limi</h2>
+  <p>Qaysi testni topshirmoqchisiz?</p>
+
+  <a class="btn" href="word-test.html">📄 Word testi (25 savol)</a>
+
+  <a class="btn" href="#" onclick="parolSorash()">📊 Excel testi 🔐</a>
+
+  <a class="btn" href="#" onclick="pptParol()">📊 PowerPoint testi 🔐</a>
+
+  <a class="btn" href="index.html">⬅️ Bosh menyuga qaytish</a>
+</div>
+
+<script>
+function parolSorash(){
+  var parol = prompt("🔐 Excel test uchun parolni kiriting:");
+  if(parol === "excel123"){
+    window.location.href = "excel-test.html";
+  } else if(parol !== null){
+    alert("❌ Parol noto‘g‘ri!");
+  }
+}
+
+function pptParol(){
+  var parol = prompt("🔐 PowerPoint test uchun parolni kiriting:");
+  if(parol === "ppt123"){
+    window.location.href = "powerpoint-test.html";
+  } else if(parol !== null){
+    alert("❌ Parol noto‘g‘ri!");
+  }
+}
+</script>
+
+</body>
+</html>
